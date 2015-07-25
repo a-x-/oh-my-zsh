@@ -1,1 +1,0 @@
-ya-mm.zsh-theme
