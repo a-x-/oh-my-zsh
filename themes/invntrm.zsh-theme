@@ -23,7 +23,7 @@ function get_computer_name() {
 }
 
 function computer_name_to_emoji() {
-    [[ $(cat - | grep 'osx') ]] && echo '%2{⌘ %}' || echo '%2{📶 %}'
+    [ "$(cat - | grep 'osx')" ] && echo '%2{⌘ %}' || echo '%2{📶 %}'
 }
 
 function put_spacing() {
