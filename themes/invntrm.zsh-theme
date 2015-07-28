@@ -32,7 +32,7 @@ function put_spacing() {
 
 local ret_status="%{%(?:%{$fg_bold[green]%}:%{$fg_bold[red]%})%}❯"
 TPROMPT='%{$fg_bold[blue]%}$(git_prompt_info)%a%{$reset_color%}'
-PROMPT="${ret_status} $TPROMPT$(get_computer_name|computer_name_to_emoji) %{$fg_bold[cyan]%}%C %{$reset_color%}"
+PROMPT="$TPROMPT $(get_computer_name|computer_name_to_emoji)%{$fg_bold[cyan]%}%C ${ret_status}%{$reset_color%} "
 
 ZSH_THEME_GIT_PROMPT_PREFIX="(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
